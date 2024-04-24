@@ -1,0 +1,204 @@
+* { 
+   margin: 0;    
+   box-sizing: border-box;
+   font-family: 'Nunito', sans-serif;
+}
+
+.header {
+    background-color:#160c28;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: 6vh;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.span {
+    margin-right: 25vh;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+}
+
+ul li {
+    margin-right: 15px; 
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(23, 23, 23);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #160c28;
+}
+
+body {
+    background-color: #ffffff;
+    color: #5e503f;
+}
+
+.tituloSection{
+    margin: 10px 0 20px 0;
+    text-align: center;
+    font-size: 1.6rem;
+    color: white;
+    background-color:#22333b;
+}
+
+.peliculas {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   transition: transform 0.3s ease;
+}
+
+.peliculas:hover {
+    transform: translateY(-5px); 
+}
+
+.aclamadas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    transition: transform 0.3s ease;
+}
+
+button {
+    appearance: auto;
+    writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    box-sizing: border-box;
+    margin: 0em;
+    padding: 1px 2px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonborder;
+    border-image: initial;
+}
+
+.footer {
+    background-color:#160c28;
+    color: #ffffff;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bodyRegistrarse {
+    height: 100vh;
+    background: linear-gradient(to right top, #24242473,#24242473),url('/Statics/img/bg-register.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+input {
+    writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: fieldtext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    background-color: field;
+    margin: 0.3em;
+    padding: 1px 2px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+}
+
+hr {
+    border: 1px solid #e7ecef;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.seccionRegistrarse {
+    opacity: 1;
+    transform: translateZ(0) scale(1);
+    transition-property: opacity, transform, -webkit-transform;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    pointer-events: auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 200px;
+    color: white;
+   
+}
+
+.contenedorDetalle {
+    display: flex; 
+}
+  
+.contenedorDetalle {
+    flex: 0 0 auto; 
+}
+  
+.textoDetalle {
+    flex: 1; 
+    padding: 30px 0 0 25px;
+    text-align: justify;
+    align-items: center;
+}
+
+.sectiondetalle {
+    margin: 20px;
+}
+
+.contenedorTrailer {
+    display: flex;
+    justify-content:left; 
+    margin-left: 15px;
+}
+
+i {
+    margin-right: 10px;
+}
+
+#pais{
+    margin: 10px 0px 0px 7px;
+}
+
+.terminos{
+    margin: 10px 0px 0px 7px;
+}
