@@ -78,18 +78,17 @@ body {
 .aclamadas {
     display: flex;
     overflow-x: auto;
-    scroll-snap-type: x mandatory; /* Hace que el desplazamiento sea horizontal y obliga a que las imágenes se desplacen una a la vez */
-    scrollbar-width: none; /* Oculta las barras de desplazamiento */
-    -webkit-overflow-scrolling: touch; /* Mejora el desplazamiento en dispositivos móviles */
+    scroll-snap-type: x mandatory; 
+    scrollbar-width: none; 
 }
 
 .peliculaItem {
-    flex: 0 0 auto; /* Hace que cada imagen ocupe todo el ancho del contenedor */
-    scroll-snap-align: start; /* Alinea cada imagen al inicio del contenedor */
+    flex: 0 0 auto; 
+    scroll-snap-align: start; 
 }
 
-img {
-    width: 100%; /* Ajusta el tamaño de la imagen según sea necesario */
+.imgAclamada {
+    width: 79%;
   }
 
 
@@ -212,4 +211,8 @@ i {
 
 .terminos{
     margin: 10px 0px 0px 7px;
+}
+
+#social {
+    color: black;
 }
