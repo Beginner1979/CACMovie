@@ -77,10 +77,21 @@ body {
 
 .aclamadas {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    transition: transform 0.3s ease;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory; /* Hace que el desplazamiento sea horizontal y obliga a que las imágenes se desplacen una a la vez */
+    scrollbar-width: none; /* Oculta las barras de desplazamiento */
+    -webkit-overflow-scrolling: touch; /* Mejora el desplazamiento en dispositivos móviles */
 }
+
+.peliculaItem {
+    flex: 0 0 auto; /* Hace que cada imagen ocupe todo el ancho del contenedor */
+    scroll-snap-align: start; /* Alinea cada imagen al inicio del contenedor */
+}
+
+img {
+    width: 100%; /* Ajusta el tamaño de la imagen según sea necesario */
+  }
+
 
 button {
     appearance: auto;
@@ -116,7 +127,7 @@ button {
 
 .bodyRegistrarse {
     height: 100vh;
-    background: linear-gradient(to right top, #24242473,#24242473),url('/Statics/img/bg-register.jpg');
+    background: linear-gradient(to right top, #24242473,#24242473),url('/CACMovie/Statics/img/bg-register.jpg');
     background-size: cover;
     background-position: center;
 }
