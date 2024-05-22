@@ -216,3 +216,11 @@ i {
 #social {
     color: black;
 }
+
+span {
+    transition: transform 0.5s ease-in-out;
+}
+
+span:hover {
+    transform: rotate(360deg);
+}
