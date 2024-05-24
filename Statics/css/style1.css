@@ -224,3 +224,16 @@ span {
 span:hover {
     transform: rotate(360deg);
 }
+
+#adm {
+    display: block;
+}
+
+#quienes-somos, #ayuda, #terminos {
+    margin: 15px;
+}
+
+#decoracion {
+    display: inline-flex;
+    color: blue;
+}

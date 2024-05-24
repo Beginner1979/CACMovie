@@ -12,14 +12,16 @@
 
 <body class="bodyRegistrarse">
     <header class="headerRegistrarse">
+        <nav>
         <a class="anclaLogo" href="./index.html">
             <i class="fas fa-film" aria-hidden="true"></i>
             <span>CAC-Movies</span>
         </a>
+        </nav>
     </header>
     <main id="main" class="main">
         <section class="seccionRegistrarse">
-            <form action="" method="get">
+            <form name="myForm2" method="post" class="formulario2" id="formulario2">
                 <h2 class="tituloRegistrarse">Iniciar Sesión</h2>
                 <div>
                     <input type="email" placeholder="Email" id="email" name="email" required>
@@ -29,8 +31,9 @@
                     <input type="password" placeholder="Contraseña" id="password" name="password" required>
                     <div class="error-text"></div>
                 </div>
+                
                 <div>
-                    <input class="boton" type="submit" value="Iniciar Sesión">
+                    <button type="submit" class="boton" id="boton">Iniciar Sesión</button>
                 </div>
                 <div>
                     <a id="ayuda" class="ayuda" href="registrarse.html">Registrarse</a>
@@ -38,5 +41,6 @@
             </form>
         </section>
     </main>
+    <script src="../CACMovie/Statics/js/iniciosesion.js"></script>
 </body>
 </html>

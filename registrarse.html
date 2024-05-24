@@ -11,15 +11,17 @@
 </head>
 <body class = "bodyRegistrarse">
     <header class="headerRegistrarse">
+        <nav>
         <a class="anclaLogo" href="./index.html">
             <i class="fas fa-film" aria-hidden="true"></i>
             <span>CAC-Movies</span>
         </a>
+        </nav>
     </header>
     <main id="main" class="main">
         <section class="seccionRegistrarse">
-            <form action="" method="get" class="formulario">
-                <h2 class="tituloRegistrarse">Registro</h2>
+            <form name="myForm" method="post" class="formulario" id="formulario1">
+                <h2 class="tituloRegistrarse">Alta de Usuario</h2>
                 <div>
                     <input type="text" placeholder="Nombre" id="nombre" name="nombre" required>
                     <div class="error-text"></div>
@@ -37,11 +39,11 @@
                     <div class="error-text"></div>
                 </div>
                 <div>
-                    <input type="date" placeholder="Fecha de Nacimiento (dd/mm/aaaa)" id="fechaNacimiento" name="fechaNacimiento">
+                    <input type="date" placeholder="Fecha de Nacimiento (dd/mm/aaaa)" id="fechaNacimiento" name="fechaNacimiento" required>
                     <div class="error-text"></div>
                 </div>
                 <div>
-                    <select name="pais" id="pais">
+                    <select name="pais" id="pais" required>
                         <option value="">País</option>
                         <option value="AR">Argentina</option>
                         <option value="BO">Bolivia</option>
@@ -57,18 +59,19 @@
                     <div class="error-text"></div>
                 </div>
                 <div class="terminos">
-                    <input class="check" type="checkbox" id="terminos">
-                    <label class="textoCheck" for="terminos">Acepto términos y condiciones</label>
+                    <input type="checkbox" class="check"  id="terminos" required>
+                    <label for="terminos"  class="textoCheck">Acepto términos y condiciones</label>
                     <div class="error-text"></div>
                 </div>
                 <div>
-                    <input class="boton" type="submit" value="Registrarse">
+                    <button class="boton" id="boton" type="submit">Registrarse</button>
                 </div>
                 <div>
-                    <a class="ayuda" href="#">Necesitas ayuda?</a>
+                    <a class="ayuda" href="../CACMovie/ayuda.html#ayuda">Necesitas ayuda?</a>
                 </div>
             </form>
         </section>
     </main>
+    <script src="../CACMovie/Statics/js/validateform.js"></script>
 </body>
 </html>
