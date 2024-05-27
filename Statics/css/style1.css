@@ -9,7 +9,6 @@
     position: sticky;
     top: 0;
     z-index: 1000;
-    height: 6vh;
     width: 100%;
 }
 
@@ -236,4 +235,77 @@ span:hover {
 #decoracion {
     display: inline-flex;
     color: blue;
+}
+
+.menu-toggle, .menu-icon {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    padding: 14px 20px;
+    color: white;
+    font-size: 20px;
+    z-index: 1; /* Asegura que el icono esté por encima del menú desplegable */
+}
+
+
+@media only screen and (max-width:600px){
+    .span {
+        flex-direction: column;
+        display: none;
+        position: absolute; /* Asegura que el menú se despliegue debajo del icono */
+        top: 50px; /* Ajusta esta propiedad según la altura del header/nav */
+        background-color: #160c28;
+        right: 0;
+        margin-right: 0;
+        opacity: 0;
+        transition: opacity 0.5s ease; 
+    }
+
+    .span li {
+        display: block;
+        text-align: center;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    /* Mostrar el menú cuando el checkbox está marcado */
+    .menu-toggle:checked + .menu-icon + .span {
+        display: flex;
+        opacity: 1; /* Opacidad completa cuando está marcado */
+    }
+}
+
+/*desde 601px hasta 762px*/
+@media only screen and (min-width:601px) and (max-width:762px){
+    .span {
+        flex-direction: column;
+        display: none;
+        position: absolute; /* Asegura que el menú se despliegue debajo del icono */
+        top: 50px; /* Ajusta esta propiedad según la altura del header/nav */
+        background-color: #160c28;
+        right: 0;
+        margin-right: 0;
+        opacity: 0;
+        transition: opacity 0.5s ease; 
+    }
+
+    .span li {
+        display: block;
+        text-align: center;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    /* Mostrar el menú cuando el checkbox está marcado */
+    .menu-toggle:checked + .menu-icon + .span {
+        display: flex;
+        opacity: 1; /* Opacidad completa cuando está marcado */
+    }
 }
