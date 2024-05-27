@@ -27,37 +27,3 @@
     .catch(error => console.error('Error al obtener los posts:', error));
 
 });
-
-
-
-function buscarDatos() {
-    // Obtener los elementos de input
-    var buscarElement = document.getElementById('buscar');
-    
-    // Obtener los valores de los input
-    var datobuscado = buscarElement.value;
-    
-    // Windows.alert dato 
-    alert(datobuscado);
-
-    // Limpiar los campos de entrada
-    buscarElement.value = '';
-  
-    fetch('https://jsonplaceholder.typicode.com/posts')
-    .then(response => response.json())
-    .then(posts => {
-    console.log(posts); // Array de posts
-    const titulo = title.find(title => title.title === dato);
-    if (titulo) {
-      alert('Titulo encontrado');
-    } else {
-      alert('Titulo no encontrado');
-    }
-  })
-   .catch(error => console.error('Error al obtener los posts:', error));
- }
-
-
-
-
-
