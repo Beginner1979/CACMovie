@@ -3,7 +3,6 @@ let usuario = [];
 var usuario3 = document.getElementById('formulario1').addEventListener('submit', function(event) {
     event.preventDefault();
     
-    
     var nombreElement = document.getElementById('nombre');
     var emailElement = document.getElementById('email');
     
