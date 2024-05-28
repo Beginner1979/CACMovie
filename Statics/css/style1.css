@@ -2,6 +2,7 @@
    margin: 0;    
    box-sizing: border-box;
    font-family: 'Nunito', sans-serif;
+
 }
 
 .header {
@@ -103,7 +104,6 @@ button {
     text-shadow: none;
     display: inline-block;
     text-align: center;
-    align-items: flex-start;
     cursor: default;
     box-sizing: border-box;
     margin: 0em;
@@ -112,6 +112,7 @@ button {
     border-style: outset;
     border-color: buttonborder;
     border-image: initial;
+    border-radius: 5px;
 }
 
 .footer {
@@ -121,6 +122,7 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .bodyRegistrarse {
@@ -130,7 +132,7 @@ button {
     background-position: center;
 }
 
-input {
+input, select {
     writing-mode: horizontal-tb !important;
     text-rendering: auto;
     color: fieldtext;
@@ -152,6 +154,7 @@ input {
     border-style: inset;
     border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
     border-image: initial;
+    border-radius: 5px;
 }
 
 hr {
@@ -161,18 +164,42 @@ hr {
     margin-top: 40px;
 }
 
-.seccionRegistrarse {
-    opacity: 1;
-    transform: translateZ(0) scale(1);
-    transition-property: opacity, transform, -webkit-transform;
-    transition-duration: 1s;
-    transition-timing-function: ease;
-    pointer-events: auto;
+.main {
+    height: 100%;
+    margin: 0;
     display: flex;
     justify-content: center;
-    padding-top: 200px;
+    align-items: center;
+}
+
+.seccionRegistrarse {
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario, .formulario2 {
+    background-color: gray;
+    padding: 20px;
+    border-radius: 10px;
     color: white;
-   
+    opacity: 0.9;
+    width: 300px;
+}
+
+.formulario input, .formulario2 input, .formulario select {
+    display: inline-block; 
+    width: 220px; 
+    margin-bottom: 10px;
+}
+
+.input#terminos.check{
+    width: auto;
+}
+
+.textoCheck, .ayuda {
+    font-size: 10.5px;
 }
 
 .contenedorDetalle {
@@ -205,11 +232,15 @@ i {
 }
 
 #pais{
-    margin: 10px 0px 0px 7px;
+    margin: 6.5px 0px 0px 5.52px;
 }
 
 .terminos{
-    margin: 10px 0px 0px 7px;
+    margin: 5px 0px 5px 0px;
+}
+
+.botonGeneral, .error-text, .tituloRegistrarse {
+    text-align: center;
 }
 
 #social {
@@ -228,7 +259,7 @@ span:hover {
     display: block;
 }
 
-#quienes-somos, #ayuda, #terminos {
+#quienes-somos, #ayuda {
     margin: 15px;
 }
 
@@ -278,6 +309,7 @@ span:hover {
         display: flex;
         opacity: 1; /* Opacidad completa cuando está marcado */
     }
+    
 }
 
 /*desde 601px hasta 762px*/
@@ -308,4 +340,5 @@ span:hover {
         display: flex;
         opacity: 1; /* Opacidad completa cuando está marcado */
     }
+
 }

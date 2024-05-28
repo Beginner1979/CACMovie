@@ -22,27 +22,27 @@
         <section class="seccionRegistrarse">
             <form name="myForm" method="post" class="formulario" id="formulario1">
                 <h2 class="tituloRegistrarse">Alta de Usuario</h2>
-                <div>
+                <div class="error-text">
                     <input type="text" placeholder="Nombre" id="nombre" name="nombre" required>
                     <div class="error-text"></div>
                 </div>
-                <div>
+                <div class="error-text">
                     <input type="text" placeholder="Apellido" id="apellido" name="apellido" required>
                     <div class="error-text"></div>
                 </div>
-                <div>
+                <div class="error-text">
                     <input type="email" placeholder="Email" id="email" name="email" required>
                     <div class="error-text"></div>
                 </div>
-                <div>
+                <div class="error-text">
                     <input type="password" placeholder="Contraseña" id="password" name="password" required>
                     <div class="error-text"></div>
                 </div>
-                <div>
+                <div class="error-text">
                     <input type="date" placeholder="Fecha de Nacimiento (dd/mm/aaaa)" id="fechaNacimiento" name="fechaNacimiento" required>
                     <div class="error-text"></div>
                 </div>
-                <div>
+                <div class="error-text">
                     <select name="pais" id="pais" required>
                         <option value="">País</option>
                         <option value="AR">Argentina</option>
@@ -63,10 +63,10 @@
                     <label for="terminos"  class="textoCheck">Acepto términos y condiciones</label>
                     <div class="error-text"></div>
                 </div>
-                <div>
+                <div class="botonGeneral">
                     <button type="submit" class="boton" id="boton">Registrarse</button>
                 </div>
-                <div>
+                <div class="error-text">
                     <a class="ayuda" href="../CACMovie/ayuda.html#ayuda">Necesitas ayuda?</a>
                 </div>
             </form>
