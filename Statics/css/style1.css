@@ -194,7 +194,7 @@ hr {
     margin-bottom: 10px;
 }
 
-.input#terminos.check{
+input#terminos {
     width: auto;
 }
 
